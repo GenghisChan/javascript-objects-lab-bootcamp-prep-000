@@ -23,3 +23,8 @@ function destructivelyDeleteFromObjectByKey(object, key) {
   delete object[key]
   return object
 }
+
+function updateObjectWithKeyAndValue(object, key, value){
+  Object.assign({}, {object}, object[key] = value)
+  
+}

@@ -9,6 +9,7 @@ function updateObjectWithKeyAndValue(object,key,value){
 }
 
 function updateObjectWithKeyAndValue(object, key, value){
-  return Object.assign({}, object, object[key] = value)
+   var newObj = Object.assign({}, object)
+   return newObj
   
 }
